@@ -24,6 +24,8 @@
     .eyebrow { color: var(--red); letter-spacing: .09em; font-size: 12px; font-weight: 700; text-transform: uppercase; }
     h1 { margin: 9px 0 8px; font-size: clamp(30px, 4vw, 48px); letter-spacing: -.035em; }
     .lead { margin: 0; color: var(--muted); font-size: 16px; }
+    .quicklink { display: inline-block; margin-top: 11px; color: var(--blue); font-size: 13px; font-weight: 700; text-decoration: none; }
+    .quicklink:hover { text-decoration: underline; }
     .summary { display: grid; grid-template-columns: repeat(4, 1fr); gap: 13px; margin: 28px 0 18px; }
     .metric { background: var(--white); border: 1px solid var(--line); border-radius: 14px; padding: 17px 18px; }
     .metric strong { display: block; font-size: 25px; line-height: 1; color: var(--blue); }
@@ -80,17 +82,18 @@
     <div class="eyebrow">ESMO 2026 · Personal itinerary</div>
     <h1>ESMO 期间行程总览</h1>
     <p class="lead">专家采访、poster 拍摄与内部会议 · 请以现场最终确认及会议日程为准。</p>
+    <a class="quicklink" href="https://avery0222.github.io/esmo-2026-bc-programme/" target="_blank" rel="noopener">查看 ESMO 2026 BC Programme ↗</a>
 
     <section class="summary" aria-label="行程摘要">
-      <div class="metric"><strong>8</strong><span>已排入主行程的事项</span></div>
+      <div class="metric"><strong>10</strong><span>已排入主行程的事项</span></div>
       <div class="metric"><strong>6</strong><span>已确认专家相关事项</span></div>
-      <div class="metric"><strong>2</strong><span>内部会议 / 社交活动</span></div>
+      <div class="metric"><strong>4</strong><span>会议 / 内部沟通</span></div>
       <div class="metric"><strong>5</strong><span>仍待确认的专家采访</span></div>
     </section>
 
     <aside class="notice">
       <b>需协调</b>
-      <p><strong>24 Oct 12:00–12:45</strong> 有两场 poster 拍摄并行（李玉东、王颐晨），建议明确现场分工；当日下午石晶（13:30–15:00）、陈益定（15:00）及杨瑾（17:00–18:00）为连续采访窗口。</p>
+      <p><strong>24 Oct 12:00–12:45</strong> 有两场 poster 拍摄并行（李玉东、王颐晨），建议明确现场分工；陈益定主任 15:00 采访后，16:30–17:00 需与 Global 医学总监沟通，随后 17:00–18:00 为杨瑾采访窗口。</p>
     </aside>
 
     <div class="toolbar">
@@ -109,6 +112,17 @@
           <time class="time">23:30<br>– 01:00</time>
           <div><h3>BREAST Affiliate Briefing</h3><p class="meta">内部会议 · In-Person Attendance<br>地点：Zaragoza（level 4）, Melia Avenida America Hotel, C. de Juan Ignacio Luca de Tena</p></div>
           <span class="tag meeting">内部会议</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="day">
+      <div class="day-head"><strong>23 Oct · Fri</strong><span>学术交流会议</span></div>
+      <div class="events">
+        <article class="event meeting" data-type="meeting">
+          <time class="time">20:00<br>– 21:30</time>
+          <div><h3>HER2 dialogue: personalizing the treatment algorithm</h3><p class="meta">陈益定主任参会<br>地点：Melia Avenida America, Level 1, León meeting room<br>材料：pre-read material</p></div>
+          <span class="tag meeting">学术会议</span>
         </article>
       </div>
     </section>
@@ -133,8 +147,13 @@
         </article>
         <article class="event interview" data-type="interview">
           <time class="time">15:00<br>已确认</time>
-          <div><h3>陈益定 · 现场采访视频</h3><p class="meta">状态：已接受邀请（10.24 下午 3 点采访）<br>地点与预计时长待现场确认</p></div>
+          <div><h3>陈益定 · Gire lidERA PRO 数据现场采访</h3><p class="meta">状态：已接受邀请（10.24 下午 3 点采访）<br>地点：IFEMA South Convention Centre，1 楼开放区域<br>材料：采访邀请函</p></div>
           <span class="tag interview">采访视频</span>
+        </article>
+        <article class="event meeting" data-type="meeting">
+          <time class="time">16:30<br>– 17:00</time>
+          <div><h3>陈益定 · 与 Global 伊那利塞医学总监 Claus Richard 沟通</h3><p class="meta">地点：IFEMA Madrid, Hall 9 · BR 81–83 · Roche Room 14</p></div>
+          <span class="tag meeting">医学沟通</span>
         </article>
         <article class="event interview" data-type="interview">
           <time class="time">17:00<br>– 18:00</time>
