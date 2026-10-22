@@ -50,12 +50,15 @@
     .event.interview::before { background: var(--cyan); }
     .event.meeting { border-left-color: var(--purple); }
     .event.meeting::before { background: var(--purple); }
+    .event.visit { border-left-color: var(--purple); }
+    .event.visit::before { background: var(--purple); }
     .time { position: absolute; left: -91px; top: 18px; width: 54px; color: var(--ink); font-weight: 700; font-size: 13px; text-align: right; }
     .event h3 { margin: 0 0 5px; font-size: 16px; }
     .meta { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.55; }
     .tag { align-self: start; color: var(--blue); background: #eaf3fb; padding: 4px 8px; border-radius: 999px; font-size: 11px; font-weight: 700; white-space: nowrap; }
     .tag.meeting { color: var(--purple); background: #f0ecf8; }
     .tag.interview { color: #007989; background: #e6f7f8; }
+    .tag.visit { color: var(--purple); background: #f0ecf8; }
     .pending { margin-top: 35px; padding: 22px; background: var(--white); border: 1px solid var(--line); border-radius: 14px; }
     .pending > p { color: var(--muted); margin: 7px 0 17px; font-size: 13px; }
     .pending-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
@@ -87,7 +90,7 @@
     <section class="summary" aria-label="行程摘要">
       <div class="metric"><strong>15</strong><span>已排入主行程的事项</span></div>
       <div class="metric"><strong>11</strong><span>已确认专家相关事项</span></div>
-      <div class="metric"><strong>6</strong><span>会议 / 内部沟通</span></div>
+      <div class="metric"><strong>4</strong><span>会议 / 内部沟通</span></div>
       <div class="metric"><strong>2</strong><span>仍待确认的专家采访</span></div>
     </section>
 
@@ -101,6 +104,7 @@
       <nav class="filters" aria-label="行程筛选">
         <button class="active" data-filter="all">全部</button>
         <button data-filter="interview">专家采访 / poster</button>
+        <button data-filter="visit">专家拜访</button>
         <button data-filter="meeting">内部会议</button>
       </nav>
     </div>
@@ -150,15 +154,15 @@
           <div><h3>陈益定 · Gire lidERA PRO 数据现场采访</h3><p class="meta">状态：已接受邀请（10.24 下午 3 点采访）<br>地点：IFEMA South Convention Centre，1 楼开放区域<br>材料：采访邀请函</p></div>
           <span class="tag interview">采访视频</span>
         </article>
-        <article class="event meeting" data-type="meeting">
+        <article class="event visit" data-type="visit">
           <time class="time">15:30<br>– 16:00</time>
-          <div><h3>陈益定 · 拜访 Global kalitERA 研究科学家</h3><p class="meta">医学沟通 · 马德里当地时间<br>地点：IFEMA Madrid, Hall 10 · 罗氏展台</p></div>
-          <span class="tag meeting">医学沟通</span>
+          <div><h3>陈益定 · 拜访 Global kalitERA 研究科学家</h3><p class="meta">专家拜访 · 马德里当地时间<br>地点：IFEMA Madrid, Hall 10 · 罗氏展台</p></div>
+          <span class="tag visit">专家拜访</span>
         </article>
-        <article class="event meeting" data-type="meeting">
+        <article class="event visit" data-type="visit">
           <time class="time">16:30<br>– 17:00</time>
-          <div><h3>陈益定 · 与 Global 伊那利塞医学总监 Claus Richard 沟通</h3><p class="meta">地点：IFEMA Madrid, Hall 9 · BR 81–83 · Roche Room 14</p></div>
-          <span class="tag meeting">医学沟通</span>
+          <div><h3>陈益定 · 与 Global 伊那利塞医学总监 Claus Richard 沟通</h3><p class="meta">专家拜访 · 马德里当地时间<br>地点：IFEMA Madrid, Hall 9 · BR 81–83 · Roche Room 14</p></div>
+          <span class="tag visit">专家拜访</span>
         </article>
         <article class="event interview" data-type="interview">
           <time class="time">17:00<br>– 18:00</time>
@@ -192,15 +196,15 @@
     <section class="day">
       <div class="day-head"><strong>26 Oct · Mon</strong><span>专家拜访</span></div>
       <div class="events">
-        <article class="event interview" data-type="interview">
+        <article class="event visit" data-type="visit">
           <time class="time">11:00<br>– 11:30</time>
           <div><h3>李曼 · ESMO Global 一对一拜访</h3><p class="meta">Meet Itovebi @ ESMO · 马德里当地时间：11:00–11:30<br>地点：IFEMA Madrid, Hall 9 · BR 81–83 · Roche Room 17 – Global Breast</p></div>
-          <span class="tag interview">专家拜访</span>
+          <span class="tag visit">专家拜访</span>
         </article>
-        <article class="event interview" data-type="interview">
+        <article class="event visit" data-type="visit">
           <time class="time">12:00<br>已确认</time>
           <div><h3>龙健婷主任 · ESMO Global 一对一拜访</h3><p class="meta">专家拜访 · 马德里当地时间（中国时间 19:00）<br>地点：IFEMA Madrid, Hall 9 · BR 81–83 · Roche Room 1</p></div>
-          <span class="tag interview">专家拜访</span>
+          <span class="tag visit">专家拜访</span>
         </article>
         <article class="event interview" data-type="interview">
           <time class="time">时间<br>待定</time>
